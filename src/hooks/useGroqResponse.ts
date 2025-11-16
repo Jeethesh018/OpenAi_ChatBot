@@ -31,7 +31,7 @@ export function useGroqResponse(): UseGroqResponseReturn {
     setLoading(false);
   }, [abort]);
 
-  const send = useCallback(
+  const send = useCallback( 
     async (inputVal: string, options?: { model?: string }) => {
       // abort previous request (optional choice)
       abort();
