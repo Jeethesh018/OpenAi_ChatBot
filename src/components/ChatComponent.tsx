@@ -7,7 +7,7 @@ type Conversation = { id: string; title: string; messages: Message[] };
 
 export default function ChatWithHistoryAndFollowups() {
   const { send, loading, abort, reset } = useGroqResponse();
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const [conversations, setConversations] = useState<Conversation[]>(() => {
     const id = String(Date.now());
