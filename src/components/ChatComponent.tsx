@@ -82,7 +82,7 @@ export default function ChatWithHistoryAndFollowups() {
   }
 
   return (
-    <div className="flex h-screen bg-gray-900 text-gray-100">
+    <div className="flex h-[100dvh] bg-gray-900 text-gray-100">
       {/* Sidebar */}
       <aside className={`${sidebarOpen ? 'w-64' : 'w-0'} transition-all duration-300 bg-gray-950 flex flex-col overflow-hidden`}>
         <div className="p-3">
